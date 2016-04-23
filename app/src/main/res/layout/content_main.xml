@@ -12,14 +12,26 @@
     tools:context="fish.com.fishapp.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"></RelativeLayout>
+        android:layout_alignParentBottom="true">
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_above="@+id/searchView"
+            android:layout_centerHorizontal="true"
+            android:typeface="sans"
+            android:hint="Busca por nombre, matrícula, etc..." />
+
+    </RelativeLayout>
 </RelativeLayout>
