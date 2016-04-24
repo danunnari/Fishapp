@@ -8,12 +8,12 @@
             android:title="Mis Reportes" />
         <item
             android:id="@+id/nav_historial"
-            android:icon="@drawable/ic_youtube_searched_for_black_24dp"
+            android:icon="@drawable/ic_menu_slideshow"
             android:title="Historial" />
         <item
             android:id="@+id/nav_ajustes"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="Ajustes" />
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Actualizar Base de Datos" />
 
     </group>
 
@@ -21,12 +21,13 @@
         <menu>
             <item
                 android:id="@+id/colaborar"
-                android:icon="@drawable/ic_people_black_24dp"
+                android:icon="@drawable/ic_menu_share"
                 android:title="Colaborar" />
             <item
                 android:id="@+id/nav_help"
-                android:icon="@drawable/ic_help"
+                android:icon="@drawable/ic_description_black_24dp"
                 android:title="Ayuda" />
+
         </menu>
     </item>
 

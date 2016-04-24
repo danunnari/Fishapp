@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="fish.com.fishapp.MainActivity"
+    tools:context=".fish.com.fishapp.controlador.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <LinearLayout
@@ -20,25 +20,34 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/linearLayout">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:typeface="sans"
-            android:hint="Busca por nombre, matrícula, etc..."
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Búsqueda avanzada"
+        android:id="@+id/btnBuscar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fefefe"
+        android:background="#2C9888" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Actualizado FECHA"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/linearLayout"
-        android:layout_alignStart="@+id/linearLayout" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=" Para iniciar una búsqueda, utilice el botón superior, si desea hacer una denuncia, utilice el botón “+”."
+        android:id="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/linearLayout" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
 
 </RelativeLayout>
