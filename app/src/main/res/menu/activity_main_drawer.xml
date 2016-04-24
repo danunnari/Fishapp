@@ -3,15 +3,15 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_reporte"
             android:icon="@drawable/ic_description_black_24dp"
             android:title="Mis Reportes" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_historial"
             android:icon="@drawable/ic_youtube_searched_for_black_24dp"
             android:title="Historial" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_ajustes"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="Ajustes" />
 
@@ -20,7 +20,7 @@
     <item android:title="Acerca de">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/colaborar"
                 android:icon="@drawable/ic_people_black_24dp"
                 android:title="Colaborar" />
             <item

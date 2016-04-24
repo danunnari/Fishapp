@@ -13,14 +13,12 @@
     tools:showIn="@layout/app_bar_main">
 
     <LinearLayout
-        mlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_main"
-        android:gravity="center_vertical|center_horizontal">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
 
         <EditText
             android:layout_width="wrap_content"
@@ -28,23 +26,19 @@
             android:id="@+id/editText"
             android:typeface="sans"
             android:hint="Busca por nombre, matrícula, etc..."
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:id="@+id/boton-buscar"
-            android:textColor="@color/abc_primary_text_material_dark"
-            android:textAlignment="center"
-            android:singleLine="false"
-            android:enabled="false"
-            android:typeface="sans"
-            android:hint="Buscar"
-            android:background="@color/accent_material_light"
-            android:layout_alignBottom="@+id/editText"
-            android:layout_alignEnd="@+id/editText" />
-
-
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Actualizado FECHA"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
 </RelativeLayout>

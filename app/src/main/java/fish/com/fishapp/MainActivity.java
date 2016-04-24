@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.search_button) {
             return true;
         }
 
@@ -80,17 +80,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_reporte) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_historial) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_ajustes) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.colaborar) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_help) {
 
         }
 
